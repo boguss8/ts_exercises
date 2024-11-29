@@ -12,10 +12,10 @@ export type Pracownik = {
     pseudonim: string;
     opis?: string;
     pensja: [number, Waluta];
-    zwolnij: (...powody: (string | number)[]) => void;
+    zwolnij: (...powody: (string | number)[]) => void; //opcjonalna
 };
 
-export type PaniBasia = Pracownik & {
+export type PaniBasia = Pracownik & { //nie powinna miec swojego typu
     graNaSkrzypcach: string;
     bezNiejTenZakładUpadnie: boolean;
 };

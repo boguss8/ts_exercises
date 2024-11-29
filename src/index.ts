@@ -28,17 +28,7 @@ const paniBasia: PaniBasia = {
 };
 
 const uruchomDzieńPracy = async () => {
-    dodajNowegoPracownika("Jan", "Kowalski", "podbutnik", [3000, Waluta.Złoty_Polski_Peelen], (...powody) => {
-        powody.forEach(powód => {
-            if (typeof powód === "number") {
-                console.log("Zwolniono z powodu numer: " + powód);
-            } else if (typeof powód === "string") {
-                console.log("Zwolniono z powodu: " + powód);
-            } else {
-                console.log("NIE UDAŁO SIĘ ZWOLNIĆ, ZOSTAJĘ W TYM GRAJDOŁKU!");
-            }
-        });
-    });
+    dodajNowegoPracownika("Jan", "Kowalski", "podbutnik", [3000, Waluta.Złoty_Polski_Peelen]);
     dodajPracownikówZListy();
     dodajPracownika(paniBasia);
 
